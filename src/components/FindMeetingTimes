@@ -1,0 +1,70 @@
+import  { useState } from 'react';
+import React from 'react';
+import axios from 'axios';
+
+const FindMeetingTimes = () => {
+  const [meetingTimes, setMeetingTimes] = useState({
+    attendees: [
+      {
+        type: 'required',
+        emailAddress: {
+          name: 'Alex Wilbur',
+          address: 'h.ezzin3808@uca.ac.ma',
+        },
+      },
+    ],
+    locationConstraint: {
+      isRequired: false,
+      suggestLocation: false,
+      locations: [
+        {
+          resolveAvailability: false,
+          displayName: 'Conf room Hood',
+        },
+      ],
+    },
+    timeConstraint: {
+      activityDomain: 'work',
+      timeSlots: [
+        {
+          start: {
+            dateTime: '2023-12-29T09:00:00',
+            timeZone: 'Pacific Standard Time',
+          },
+          end: {
+            dateTime: '2023-12-30T17:00:00',
+            timeZone: 'Pacific Standard Time',
+          },
+        },
+      ],
+    },
+    isOrganizerOptional: 'false',
+    meetingDuration: 'PT1H',
+    returnSuggestionReasons: 'true',
+    minimumAttendeePercentage: 100,
+  });
+
+  const [isLoading, setIsLoading] = useState(false);
+
+  const handleFindMeetingTimes = async () => {
+    setIsLoading(true);
+
+    try {
+      const response = await axios.post('http://localhost:3000/api/findMeetingTimes', meetingTimes);
+      console.log("Meeting Times Response:", response.data);
+      // Handle the response as needed
+    } catch (error) {
+      console.error("Error finding meeting times:", error);
+      // Handle the error as needed
+    } finally {
+      setIsLoading(false);
+    }
+  };
+
+  return (
+<div>
+</div>
+  );
+};
+
+export default FindMeetingTimes;

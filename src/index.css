@@ -11,3 +11,405 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap");
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: "Space Grotesk", sans-serif;
+}
+body {
+	margin: 0;
+	padding: 0;
+}
+a {
+	text-decoration: none;
+	color: #c58940;
+	cursor: pointer;
+}
+input,
+textarea {
+	padding: 15px;
+	width: 100%;
+	margin-bottom: 20px;
+}
+label {
+	margin-bottom: 5px;
+}
+button {
+	cursor: pointer;
+	outline: none;
+	border: none;
+	padding: 10px;
+}
+.login,
+.login__form,
+.signup,
+.signup__form {
+	width: 100%;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.login__form input,
+.signup__form input {
+	width: 70%;
+}
+.login__title,
+.signup__title {
+	margin-bottom: 30px;
+}
+.loginButton{
+	background-color: #2e3ca9;
+}
+.signupButton {
+	width: 200px;
+	padding: 15px;
+	background-color: #2e3ca9;
+}
+.dashboard__nav {
+	background-color: #c58940;
+	height: 10vh;
+	width: 100%;
+	padding: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.logout__btn,
+.dashboard__heading button {
+	padding: 15px;
+	width: 150px;
+	margin-right: 15px;
+	background-color: #faf8f1;
+}
+.logout__btn:hover {
+	background-color: #faeab1;
+}
+.dashboard__main {
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.dashboard__heading {
+	display: flex;
+	margin-bottom: 25px;
+	align-items: center;
+	justify-content: space-between;
+}
+.timezone__wrapper {
+	width: 50%;
+}
+.saveBtn__container {
+	width: 100%;
+	padding: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.saveBtn__container button {
+	width: 200px;
+	padding: 15px;
+	background-color: #2e3ca9;
+}
+.form {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 30px;
+}
+.select__wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 15px;
+}
+select {
+	padding: 10px;
+	min-width: 150px;
+}
+.profile {
+	min-height: 100vh;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+table {
+	border: 1px solid #ddd;
+	width: 100%;
+	border-collapse: collapse;
+}
+tr,
+td {
+	border: 1px solid #ddd;
+	padding: 20px;
+}
+.bookContainer {
+	width: 100%;
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding: 30px;
+}
+.booking__form {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	width: 80%;
+	margin: 0 auto;
+}
+.bookTitle {
+	margin-bottom: 30px;
+	color: #2e3ca9;
+}
+.bookingBtn {
+	margin-top: 20px;
+	background-color: #2e3ca9;
+	color: #fff;
+}
+.errorContainer {
+	display: flex;
+	align-items: center;
+	height: 100vh;
+	width: 100%;
+	padding: 30px;
+	justify-content: center;
+	flex-direction: column;
+}
+body {
+	font-family: 'Roboto', sans-serif;
+	margin: 0;
+	padding: 0;
+  }
+  
+  .app-container {
+	text-align: center;
+	margin: 20px;
+  }
+  
+  h1 {
+	color: #3498db;
+  }
+  
+  /* Calendar styles */
+  .rbc-calendar {
+	background-color: #fff;
+	border: 1px solid #ddd;
+	border-radius: 8px;
+	overflow: hidden;
+  }
+  
+  .rbc-month-view {
+	border-radius: 8px;
+	padding: 10px;
+  }
+  
+  .rbc-header {
+	background-color: #3498db;
+	color: #fff;
+  }
+  
+  .rbc-date-cell {
+	font-weight: bold;
+  }
+  
+  .rbc-event {
+	background-color: #3498db;
+	border: 1px solid #2980b9;
+	border-radius: 5px;
+	padding: 5px;
+	margin-bottom: 5px;
+	font-size: 14px;
+	cursor: pointer;
+	color: #fff;
+  }
+  
+  .rbc-today {
+	background-color: #3498db;
+	color: #fff;
+  }
+  
+  .rbc-off-range {
+	color: #95a5a6;
+  }
+  
+  .rbc-event-cancelled {
+	background-color: #e57373;
+  }
+  
+  /* Additional styles for a clean look */
+  .rbc-time-view {
+	background-color: #fff;
+	border-radius: 8px;
+  }
+  
+  .rbc-time-header-content {
+	font-size: 16px;
+	color: #2c3e50;
+  }
+  
+  .rbc-time-view-event {
+	background-color: #3498db;
+	border: 1px solid #2980b9;
+	border-radius: 5px;
+	padding: 5px;
+	margin-bottom: 5px;
+	font-size: 14px;
+	color: #fff;
+  }
+  
+  .rbc-time-gutter {
+	color: #2c3e50;
+  }
+  
+  /* Responsive styles for smaller screens */
+  @media (max-width: 600px) {
+	.rbc-toolbar-label {
+	  font-size: 14px;
+	}
+  
+	.rbc-toolbar button {
+	  padding: 6px 12px;
+	  font-size: 12px;
+	}
+  
+	.rbc-btn-group button {
+	  padding: 3px 6px;
+	  font-size: 12px;
+	}
+  
+	.rbc-overlay {
+	  font-size: 12px;
+	}
+  }
+  
+  /* Additional styles for a modern look */
+  .rbc-event-content {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+  }
+  
+  .rbc-event-label {
+	flex: 1;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	margin-right: 10px;
+  }
+  
+  .rbc-event-cancelled {
+	background-color: #e74c3c;
+	border: 1px solid #c0392b;
+	color: #fff;
+  }
+  
+  /* Additional styles for a polished and modern look */
+  .rbc-agenda-time-cell {
+	color: #2c3e50;
+	font-weight: bold;
+  }
+  
+  .rbc-agenda-date-cell,
+  .rbc-agenda-time-cell {
+	border-bottom: 1px solid #ddd;
+  }
+  
+  .rbc-agenda-event-cell {
+	padding: 10px;
+	background-color: #fff;
+	border-left: 2px solid #3498db;
+	border-right: 2px solid #3498db;
+  }
+  
+  .rbc-agenda-event {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #3498db;
+	color: #fff;
+	border: 1px solid #2980b9;
+	border-radius: 5px;
+	padding: 10px;
+	margin-bottom: 10px;
+  }
+  
+  .rbc-agenda-event:hover {
+	background-color: #2980b9;
+  }
+  
+  /* Additional styles for an event detail modal */
+  .event-detail-modal {
+	background-color: rgba(0, 0, 0, 0.8);
+	color: #fff;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  }
+  
+  .modal-content {
+	background-color: #fff;
+	border-radius: 8px;
+	padding: 20px;
+	max-width: 400px;
+	width: 100%;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .modal-close-btn {
+	cursor: pointer;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	font-size: 18px;
+	color: #333;
+  }
+  
+  /* Additional styles for the event detail content */
+  .event-detail-title {
+	font-size: 20px;
+	font-weight: bold;
+	margin-bottom: 10px;
+  }
+  
+  .event-detail-description {
+	font-size: 16px;
+	line-height: 1.5;
+	margin-bottom: 20px;
+  }
+  
+  .event-detail-metadata {
+	font-size: 14px;
+	color: #666;
+  }
+  
+  /* Responsive styles for smaller screens */
+  @media (max-width: 600px) {
+	.rbc-agenda-event-cell {
+	  padding: 5px;
+	}
+  
+	.rbc-agenda-event {
+	  padding: 5px;
+	  margin-bottom: 5px;
+	}
+  
+	.modal-content {
+	  max-width: 100%;
+	}
+  }
+  

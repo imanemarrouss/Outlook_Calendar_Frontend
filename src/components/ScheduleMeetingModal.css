@@ -1,0 +1,51 @@
+.custom-modal {
+  width: 400px;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #fff; /* Set the background color of the modal */
+  position: absolute; /* Set the position to absolute to overlay on top of the calendar */
+  top: 50%; /* Center the modal vertically */
+  left: 50%; /* Center the modal horizontally */
+  transform: translate(-50%, -50%); /* Center the modal both horizontally and vertically */
+}
+
+/* ... (other styles remain the same) */
+
+  
+  .modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .cancel-button {
+    background-color: #ff4d4d;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .modal-form {
+    /* Add your form styles here */
+  }
+  
+  .form-label, .form-input {
+    /* Add your form label and input styles here */
+  }
+  
+  .submit-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .submit-button:hover {
+    background-color: #0056b3;
+  }
+  
